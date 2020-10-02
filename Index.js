@@ -2,6 +2,8 @@ const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
 const Engineer = require('./lib/Engineer');
 const inquirer = require('inquirer');
+const createPage = require('./src/create-page');
+const writeNewFile = require('./src/write-new-file');
 
 let empArray = [];
 
@@ -111,8 +113,7 @@ const getNext = function(){
                 addIntern();
             }
             else{
-                createFile(empArray);
-                return;
+                createPage(empArray)
             }
         })
 }

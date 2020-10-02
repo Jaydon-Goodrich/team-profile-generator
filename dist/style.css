@@ -1,0 +1,29 @@
+.container{
+    display: flex; 
+    flex-wrap: wrap;
+}
+body{
+    background-color: whitesmoke;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h1{
+    padding: 30px;
+    background-color: navy; 
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.card{
+    background-color: lightgrey;
+    color: black;
+    margin: 15px;
+    width:300px; 
+    height:400px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 10px 10px 5px grey;
+}
+.card p {
+    font-size: 22px;
+}
