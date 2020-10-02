@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+//Function for writing a file to index.html
 const writeNewFile = function(fileContent) {
     return new Promise((resolve, reject) => {
         fs.writeFile('./dist/index.html', fileContent, err => {
@@ -17,6 +17,7 @@ const writeNewFile = function(fileContent) {
         });
     });
 }
+//function for copying the CSS file
 const copyFile = () => {
     return new Promise((resolve, reject) => {
         fs.copyFile('./src/style.css', './dist/style.css', err => {

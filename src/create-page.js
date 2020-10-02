@@ -1,8 +1,6 @@
-const Manager = require('../lib/Manager');
-const Intern = require('../lib/Intern');
-const Engineer = require('../lib/Engineer');
 const { writeNewFile, copyFile } = require('./write-new-file');
 
+// used to create a card depending on which type of employee
 const generateCards = function (array) {
     return `
         ${array.filter(({ office }) => office).map(({name, id, email, office}) => {
@@ -42,6 +40,7 @@ const generateCards = function (array) {
 
 }
 
+//Creates the standard html page and calls generateCards to dynamically populate the rest
 const createPage = function (array) {
     const fileContent = 
     `

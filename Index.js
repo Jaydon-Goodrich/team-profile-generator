@@ -5,8 +5,10 @@ const inquirer = require('inquirer');
 const createPage = require('./src/create-page');
 const writeNewFile = require('./src/write-new-file');
 
+//creates a new array for storing employee objects
 let empArray = [];
 
+//prompts for adding a manager
 const addManager = function(){
 inquirer
     .prompt([{
@@ -37,6 +39,7 @@ inquirer
     });
 }
 
+//prompts for adding an engineer
 const addEngineer = function(){
     inquirer
     .prompt([{
@@ -67,6 +70,7 @@ const addEngineer = function(){
     });
 }
 
+//prompts for adding an intern
 const addIntern = function(){
     inquirer
     .prompt([{
@@ -97,6 +101,7 @@ const addIntern = function(){
     });
 }
 
+//prompt for cycling through and selecting
 const getNext = function(){
     inquirer
         .prompt({
@@ -118,5 +123,5 @@ const getNext = function(){
         })
 }
 
-
+//initial call to start the prompts
 addManager();
